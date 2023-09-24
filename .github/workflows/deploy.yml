@@ -25,7 +25,6 @@ jobs:
         run: |
           streamlit run Cost_Management_Dashboard &
           streamlit run Profit&Loss_Dashboard &
-        background: true
 
       - name: Deploy to GitHub Pages (optional)
         uses: peaceiris/actions-gh-pages@v3
