@@ -5,8 +5,8 @@ st.set_page_config(
     page_icon="👋",
 )
 
-image_path = "medkicklogo.png"
-st.title("Med-Kick Dashboards")
 
+st.title("Financial Dashboards")
+image_path = "medkicklogo.png"
 st.image(image_path, caption="", use_column_width=True)
 st.sidebar.success("Select a page above.")
