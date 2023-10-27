@@ -134,7 +134,7 @@ else:
 
     # Display the filtered DataFrame as a table
     st.subheader('Data')
-    st.dataframe(dfd, height=3)
+    st.dataframe(dfd, height=3, hide_index=True)
 
     # Reshape data for Plotly Express
     reshaped_data = pd.melt(dfd, id_vars='KPI', var_name='Month', value_name='Total Expenditure for the Month')
@@ -185,7 +185,7 @@ else:
 
     # Display the filtered DataFrame as a table
     st.subheader('Data')
-    st.dataframe(dff)
+    st.dataframe(dff, hide_index=True)
 
     # Calculate the total expenditure for each KPI in the selected range
     total_expenditure_per_kpi = dff.groupby('KPI').sum().sum(axis=1)
@@ -278,7 +278,7 @@ else:
     
         # Display the filtered DataFrame as a table
         st.subheader('Data')
-        st.dataframe(filtered_data, height=3)
+        st.dataframe(filtered_data, height=3, hide_index=True)
 
         # Reshape data for Plotly Express
         reshaped_data = pd.melt(filtered_data, id_vars='KPI', var_name='Month', value_name='Cost')
