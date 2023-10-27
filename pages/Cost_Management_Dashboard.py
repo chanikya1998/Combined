@@ -134,7 +134,7 @@ else:
 
     # Display the filtered DataFrame as a table
     st.subheader('Data')
-    st.dataframe(dfd, height=3, hide_index=True)
+    st.dataframe(dfd, height=3)
 
     # Reshape data for Plotly Express
     reshaped_data = pd.melt(dfd, id_vars='KPI', var_name='Month', value_name='Total Expenditure for the Month')
