@@ -185,7 +185,7 @@ else:
 
     # Display the filtered DataFrame as a table
     st.subheader('Data')
-    st.dataframe(dff, hide_index=True)
+    st.dataframe(dff)
 
     # Calculate the total expenditure for each KPI in the selected range
     total_expenditure_per_kpi = dff.groupby('KPI').sum().sum(axis=1)
