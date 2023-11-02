@@ -32,12 +32,12 @@ if authentication_status is None:
     st.warning("Please enter your username and password")
 
 if authentication_status:
-    st.title("Financial Dashboards")
+    st.title("Med-Kick Dashboard App")
     image_path = "medkicklogo.png"
     st.image(image_path, caption="", use_column_width=True)
     st.sidebar.success("Select a page above.")
 
-    # Hide Streamlit style
+    # ---- HIDE STREAMLIT STYLE ----
     hide_st_style = """
         <style>
         #MainMenu {visibility: hidden;}
@@ -46,3 +46,11 @@ if authentication_status:
         </style>
     """
     st.markdown(hide_st_style, unsafe_allow_html=True)
+
+    # Now, you can add your dashboard content here for authenticated users.
+    # For example, you can display financial charts or reports.
+    # Modify the code within this block to suit your dashboard's needs.
+
+    # Example: Display a chart
+    st.subheader("Financial Dashboard")
+    st.write("Your financial charts go here.")
