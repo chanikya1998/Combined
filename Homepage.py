@@ -35,9 +35,6 @@ if authentication_status == None:
     st.warning("Please enter your username and password")
 
 if authentication_status:
-    # ---- READ EXCEL ----
-    @st.cache
-
 
     st.title("Financial Dashboards")
     image_path = "medkicklogo.png"
